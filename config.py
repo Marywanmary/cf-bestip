@@ -58,8 +58,8 @@ MAX_PROXIES_PER_REGION = 6
 #   PROXY_CHECK_API_URL="url1|url2" 或 "url1,url2" 或 "url1 url2"
 # 代码会按顺序尝试，避免单个自定义域 DNS 故障导致整个任务失败。
 import re
-# PROXY_CHECK_API_URL = "https://prcheck.ittool.pp.ua/check"
-# PROXY_CHECK_API_TOKEN = "588wbb"
+PROXY_CHECK_API_URL = "https://prcheck.ittool.pp.ua/check"
+PROXY_CHECK_API_TOKEN = "588wbb"
 
 _PROXY_CHECK_API_URL_RAW = os.getenv("PROXY_CHECK_API_URL", "https://check.603711936.us.ci/check")
 PROXY_CHECK_API_URLS = [
